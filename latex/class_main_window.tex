@@ -1,0 +1,94 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+This class handles the UI displaying the main menu of the game.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a0416fa37103aeb873f99c3c90f401f6f}{start\+\_\+level1} ()\hypertarget{class_main_window_a0416fa37103aeb873f99c3c90f401f6f}{}\label{class_main_window_a0416fa37103aeb873f99c3c90f401f6f}
+
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classlevel1}{level1} and set it as the main widget. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_abba367075f5c8e11fdc9e531c55ef4e3}{start\+\_\+level2} ()\hypertarget{class_main_window_abba367075f5c8e11fdc9e531c55ef4e3}{}\label{class_main_window_abba367075f5c8e11fdc9e531c55ef4e3}
+
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classlevel2}{level2} and set it as the main widget. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a0be57e220676b7ff32fee2b9bd4dd8e8}{start\+\_\+level3} ()\hypertarget{class_main_window_a0be57e220676b7ff32fee2b9bd4dd8e8}{}\label{class_main_window_a0be57e220676b7ff32fee2b9bd4dd8e8}
+
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classlevel3}{level3} and set it as the main widget. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a982e9b59ebe751fe6b1aac349309a51f}{victory\+\_\+screen} ()\hypertarget{class_main_window_a982e9b59ebe751fe6b1aac349309a51f}{}\label{class_main_window_a982e9b59ebe751fe6b1aac349309a51f}
+
+\begin{DoxyCompactList}\small\item\em Create the victory screen and set it as the main widget. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad095804e948ea80ebaa1311858700ded}{game\+\_\+over} ()\hypertarget{class_main_window_ad095804e948ea80ebaa1311858700ded}{}\label{class_main_window_ad095804e948ea80ebaa1311858700ded}
+
+\begin{DoxyCompactList}\small\item\em Create the main menu screen and set it as the main widget. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a565aac1b17c3810913270d503d94b983}{show\+\_\+controls} ()\hypertarget{class_main_window_a565aac1b17c3810913270d503d94b983}{}\label{class_main_window_a565aac1b17c3810913270d503d94b983}
+
+\begin{DoxyCompactList}\small\item\em Create the game controls screen and set it as the main widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+\begin{DoxyCompactList}\small\item\em Delete the main window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the UI displaying the main menu of the game. 
+
+Definition at line 23 of file mainwindow.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{Main\+Window(\+Q\+Widget $\ast$parent=0)}{MainWindow(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+Create the main menu 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is the parent Q\+Widget of this object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}
+10                                       :
+11     QMainWindow(parent),
+12     ui(\textcolor{keyword}{new} Ui::MainWindow) \{
+13     ui->setupUi(\textcolor{keyword}{this});
+14     \textcolor{comment}{// Set up the music for the game}
+15     menu\_music = \textcolor{keyword}{new} QMediaPlayer();
+16     menu\_music->setMedia(QUrl(\textcolor{stringliteral}{"qrc:/sounds/menu.mp3"}));
+17     menu\_music->play();
+18     bgm = \textcolor{keyword}{new} QMediaPlayer();
+19     bgm->setMedia(QUrl(\textcolor{stringliteral}{"qrc:/sounds/bgm.mp3"}));
+20     victory\_music = \textcolor{keyword}{new} QMediaPlayer();
+21     victory\_music->setMedia(QUrl(\textcolor{stringliteral}{"qrc:/sounds/victory.mp3"}));
+22 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}

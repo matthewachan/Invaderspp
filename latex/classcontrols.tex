@@ -1,0 +1,69 @@
+\hypertarget{classcontrols}{}\section{controls Class Reference}
+\label{classcontrols}\index{controls@{controls}}
+
+
+This class handles the UI displaying the controls/instructions for the game.  
+
+
+
+
+{\ttfamily \#include $<$controls.\+h$>$}
+
+Inheritance diagram for controls\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcontrols}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcontrols_a9a2803968e87a1d002044fbafcbad766}{controls} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classcontrols_a69af1fa496cee3411b8d2f207f046786}{$\sim$controls} ()\hypertarget{classcontrols_a69af1fa496cee3411b8d2f207f046786}{}\label{classcontrols_a69af1fa496cee3411b8d2f207f046786}
+
+\begin{DoxyCompactList}\small\item\em Deletes the UI. \end{DoxyCompactList}\item 
+void \hyperlink{classcontrols_a61cf1ab9310885ff551b2393be8bab66}{paint\+Event} (Q\+Paint\+Event $\ast$)\hypertarget{classcontrols_a61cf1ab9310885ff551b2393be8bab66}{}\label{classcontrols_a61cf1ab9310885ff551b2393be8bab66}
+
+\begin{DoxyCompactList}\small\item\em Fills the background with a black rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the UI displaying the controls/instructions for the game. 
+
+Definition at line 19 of file controls.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{controls@{controls}!controls@{controls}}
+\index{controls@{controls}!controls@{controls}}
+\subsubsection[{\texorpdfstring{controls(\+Q\+Widget $\ast$parent=0)}{controls(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}controls\+::controls (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classcontrols_a9a2803968e87a1d002044fbafcbad766}{}\label{classcontrols_a9a2803968e87a1d002044fbafcbad766}
+Constructs a controls object 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is the parent Q\+Widget of this object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file controls.\+cpp.
+
+
+\begin{DoxyCode}
+8                                   : QWidget(parent), ui(\textcolor{keyword}{new} Ui::controls)
+9 \{
+10     \textcolor{comment}{// init ui form's components}
+11     ui->setupUi(\textcolor{keyword}{this});
+12     connect(ui->pushButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), parent, SLOT(game\_over()));
+13 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controls_8h}{controls.\+h}\item 
+\hyperlink{controls_8cpp}{controls.\+cpp}\end{DoxyCompactItemize}

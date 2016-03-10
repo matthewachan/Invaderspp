@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/sprites">
+        <file>background.png</file>
+        <file>enemy.png</file>
+        <file>laser.png</file>
+        <file>player.png</file>
+        <file>enemyLaser.png</file>
+        <file>boss.png</file>
+        <file>enemy2.png</file>
+        <file>enemy3.png</file>
+        <file>enemy4.png</file>
+        <file>bossAttack.png</file>
+        <file>enemy2Laser.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>bgm.mp3</file>
+        <file>menu.mp3</file>
+        <file>bosslaser.wav</file>
+        <file>laser.mp3</file>
+        <file>enemylaser.wav</file>
+        <file>death.mp3</file>
+    </qresource>
+</RCC>

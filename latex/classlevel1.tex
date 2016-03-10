@@ -1,0 +1,218 @@
+\hypertarget{classlevel1}{}\section{level1 Class Reference}
+\label{classlevel1}\index{level1@{level1}}
+
+
+This class handles the logic and display events for level 1.  
+
+
+
+
+{\ttfamily \#include $<$level1.\+h$>$}
+
+Inheritance diagram for level1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlevel1}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlevel1_a431eac5dfc5286c4173d4ca18bef03ce}{update\+Frame} ()\hypertarget{classlevel1_a431eac5dfc5286c4173d4ca18bef03ce}{}\label{classlevel1_a431eac5dfc5286c4173d4ca18bef03ce}
+
+\begin{DoxyCompactList}\small\item\em Scale the game to fit the current window dimensions. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_a20a0e78a0ea626784b2efd1addf82238}{animate\+Bullet} ()\hypertarget{classlevel1_a20a0e78a0ea626784b2efd1addf82238}{}\label{classlevel1_a20a0e78a0ea626784b2efd1addf82238}
+
+\begin{DoxyCompactList}\small\item\em Handles the logic for animating the player\textquotesingle{}s bullet. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_a928d2376d442f285fa1e703a1a7f9104}{check\+Hitbox} ()\hypertarget{classlevel1_a928d2376d442f285fa1e703a1a7f9104}{}\label{classlevel1_a928d2376d442f285fa1e703a1a7f9104}
+
+\begin{DoxyCompactList}\small\item\em Check player and enemy hitboxes for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_a76e8519c9cbae81ed94efac17e44565b}{animate\+Enemy} ()\hypertarget{classlevel1_a76e8519c9cbae81ed94efac17e44565b}{}\label{classlevel1_a76e8519c9cbae81ed94efac17e44565b}
+
+\begin{DoxyCompactList}\small\item\em Handles the logic for moving the enemy and making the enemy attack. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_ace96df0a7bf2be129baa602a47ffc38d}{enemy\+Attack} ()\hypertarget{classlevel1_ace96df0a7bf2be129baa602a47ffc38d}{}\label{classlevel1_ace96df0a7bf2be129baa602a47ffc38d}
+
+\begin{DoxyCompactList}\small\item\em Fires the enemy\textquotesingle{}s bullet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlevel1_abc87b5eddf6272837ff28cb36d1df0ab}{game\+\_\+over} ()\hypertarget{classlevel1_abc87b5eddf6272837ff28cb36d1df0ab}{}\label{classlevel1_abc87b5eddf6272837ff28cb36d1df0ab}
+
+\begin{DoxyCompactList}\small\item\em Signal called when the player has lost all of their lives. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_aaf762761c96d106b43fe0d331ecee122}{next\+\_\+level} ()\hypertarget{classlevel1_aaf762761c96d106b43fe0d331ecee122}{}\label{classlevel1_aaf762761c96d106b43fe0d331ecee122}
+
+\begin{DoxyCompactList}\small\item\em Signal called when all enemies in the level have been defeated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlevel1_af9161b2438ae5d458fc142bd754a9000}{level1} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classlevel1_a7346b26ad8d7c1e6101c55086ae1eed3}{$\sim$level1} ()\hypertarget{classlevel1_a7346b26ad8d7c1e6101c55086ae1eed3}{}\label{classlevel1_a7346b26ad8d7c1e6101c55086ae1eed3}
+
+\begin{DoxyCompactList}\small\item\em Deletes the UI. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_ac47ea44681080d09e5d24bf14810f8ee}{paint\+Event} (Q\+Paint\+Event $\ast$)\hypertarget{classlevel1_ac47ea44681080d09e5d24bf14810f8ee}{}\label{classlevel1_ac47ea44681080d09e5d24bf14810f8ee}
+
+\begin{DoxyCompactList}\small\item\em Draw all objects (player, enemies, bullets, etc.) onto the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classlevel1_a713dc5cfb6dd37be3979f48272680e2c}{key\+Press\+Event} (Q\+Key\+Event $\ast$e)
+\item 
+void \hyperlink{classlevel1_af7da421e6236bd4580d7ac6680e68be8}{show\+Event} (Q\+Show\+Event $\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the logic and display events for level 1. 
+
+Definition at line 30 of file level1.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{level1@{level1}!level1@{level1}}
+\index{level1@{level1}!level1@{level1}}
+\subsubsection[{\texorpdfstring{level1(\+Q\+Widget $\ast$parent=0)}{level1(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}level1\+::level1 (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classlevel1_af9161b2438ae5d458fc142bd754a9000}{}\label{classlevel1_af9161b2438ae5d458fc142bd754a9000}
+Create the level 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is the parent Q\+Widget of this object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file level1.\+cpp.
+
+
+\begin{DoxyCode}
+9                               : QWidget(parent), ui(\textcolor{keyword}{new} Ui::level1)
+10 \{
+11     \textcolor{comment}{// init ui form's components}
+12     ui->setupUi(\textcolor{keyword}{this});
+13     \textcolor{comment}{// init pixmaps}
+14     background = \textcolor{keyword}{new} QPixmap(\textcolor{stringliteral}{":/sprites/background.png"});
+15     player = \textcolor{keyword}{new} QPixmap(\textcolor{stringliteral}{":/sprites/player.png"});
+16     bullet = \textcolor{keyword}{new} QPixmap(\textcolor{stringliteral}{":/sprites/laser.png"});
+17     enemy = \textcolor{keyword}{new} QPixmap(\textcolor{stringliteral}{":/sprites/enemy.png"});
+18     enemyBullet = \textcolor{keyword}{new} QPixmap(\textcolor{stringliteral}{":/sprites/enemyLaser.png"});
+19     \textcolor{comment}{// animate the bullet}
+20     animateTimer = \textcolor{keyword}{new} QTimer();
+21     connect(animateTimer, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{classlevel1_a20a0e78a0ea626784b2efd1addf82238}{animateBullet}()));
+22     connect(animateTimer, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{classlevel1_a928d2376d442f285fa1e703a1a7f9104}{checkHitbox}()));
+23     connect(animateTimer, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{classlevel1_a76e8519c9cbae81ed94efac17e44565b}{animateEnemy}()));
+24     connect(animateTimer, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{classlevel1_a431eac5dfc5286c4173d4ca18bef03ce}{updateFrame}()));
+25     animateTimer->start(40); \textcolor{comment}{// timer times out every 40 ms}
+26     \textcolor{comment}{// enemy attacks every 5 seconds}
+27     attackTimer = \textcolor{keyword}{new} QTimer();
+28     connect(attackTimer, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{classlevel1_ace96df0a7bf2be129baa602a47ffc38d}{enemyAttack}()));
+29     attackTimer->start(3000); \textcolor{comment}{// timer times out every 5 secs}
+30     \textcolor{comment}{// init scoreboard stats}
+31     lives = 3;
+32     score = 0;
+33     \textcolor{comment}{// game over and next level events}
+34     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{classlevel1_abc87b5eddf6272837ff28cb36d1df0ab}{game\_over}()), parent, SLOT(\hyperlink{classlevel1_abc87b5eddf6272837ff28cb36d1df0ab}{game\_over}()));
+35     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{classlevel1_aaf762761c96d106b43fe0d331ecee122}{next\_level}()), parent, SLOT(start\_level2()));
+36     \textcolor{comment}{// sounds}
+37     bulletSound = \textcolor{keyword}{new} QMediaPlayer();
+38     bulletSound->setMedia(QUrl(\textcolor{stringliteral}{"qrc:/sounds/laser.mp3"}));
+39     enemySound = \textcolor{keyword}{new} QMediaPlayer();
+40     enemySound->setMedia(QUrl(\textcolor{stringliteral}{"qrc:/sounds/enemylaser.wav"}));
+41     deathSound = \textcolor{keyword}{new} QMediaPlayer();
+42     deathSound->setMedia((QUrl(\textcolor{stringliteral}{"qrc:/sounds/death.mp3"})));
+43 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{level1@{level1}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!level1@{level1}}
+\subsubsection[{\texorpdfstring{key\+Press\+Event(\+Q\+Key\+Event $\ast$e)}{keyPressEvent(QKeyEvent *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void level1\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classlevel1_a713dc5cfb6dd37be3979f48272680e2c}{}\label{classlevel1_a713dc5cfb6dd37be3979f48272680e2c}
+Handle keyboard input. Left and right keys move the player, space shoots a bullet. 
+\begin{DoxyParams}{Parameters}
+{\em e} & is the event corresponding with each keypress \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file level1.\+cpp.
+
+
+\begin{DoxyCode}
+72 \{
+73     \textcolor{comment}{// player cannot go off of the screen}
+74     \textcolor{keywordflow}{if} (e->key() == Qt::Key\_Left) \{
+75         \textcolor{keywordflow}{if} (playerLoc->x() > 0)
+76             playerLoc->setX(playerLoc->x()-playerSpeed);
+77     \}
+78     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (e->key() == Qt::Key\_Right) \{
+79         \textcolor{keywordflow}{if} (playerLoc->x() + playerSize->width() < this->width())
+80             playerLoc->setX(playerLoc->x()+playerSpeed);
+81     \}
+82     \textcolor{comment}{// player can only fire one bullet at a time}
+83     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (e->key() == Qt::Key\_Space) \{
+84         \textcolor{keywordflow}{if} (canFire) \{
+85             bulletLoc = \textcolor{keyword}{new} QPoint(playerLoc->x()+(bulletSize->width()/2), playerLoc->y() - bulletSize->
+      height()/2);
+86             \textcolor{keywordflow}{if} (bulletSound->state() == QMediaPlayer::PlayingState)
+87                 bulletSound->setPosition(0);
+88             bulletSound->play();
+89             canFire = \textcolor{keyword}{false};
+90         \}
+91     \}
+92     \textcolor{comment}{// repaint the scene}
+93     this->update();
+94 \}
+\end{DoxyCode}
+\index{level1@{level1}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!level1@{level1}}
+\subsubsection[{\texorpdfstring{show\+Event(\+Q\+Show\+Event $\ast$e)}{showEvent(QShowEvent *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void level1\+::show\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Show\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classlevel1_af7da421e6236bd4580d7ac6680e68be8}{}\label{classlevel1_af7da421e6236bd4580d7ac6680e68be8}
+Initialize specific class variables when the Q\+Widget is shown 
+\begin{DoxyParams}{Parameters}
+{\em e} & is the event object created when the Q\+Widget is first displayed on screen \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file level1.\+cpp.
+
+
+\begin{DoxyCode}
+97 \{
+98     \textcolor{comment}{// show the widget and allow it to take keyboard input}
+99     this->activateWindow();
+100     this->setFocus();
+101     QWidget::showEvent(e);
+102     \textcolor{comment}{// init player variables}
+103     playerAlive = \textcolor{keyword}{true};
+104     playerSpeed = this->width()/50;
+105     playerSize = \textcolor{keyword}{new} QSize(this->width()/18, this->width()/10);
+106     \textcolor{comment}{// player starts in the middle-bottom of the screen}
+107     playerLoc = \textcolor{keyword}{new} QPoint((this->width()/2)-playerSize->width(), this->height() - playerSize->height());
+108     canFire = \textcolor{keyword}{true}; \textcolor{comment}{// player is able to shoot}
+109     \textcolor{comment}{// init bullet size and speed}
+110     bulletSize = \textcolor{keyword}{new} QSize(playerSize->width()/2, playerSize->height()/2);
+111     bulletSpeed = this->height()/50;
+112     \textcolor{comment}{// init enemy variables}
+113     enemyAlive = \textcolor{keyword}{true};
+114     left = \textcolor{keyword}{false};
+115     enemySpeed = this->width()/200;
+116     enemySize = \textcolor{keyword}{new} QSize(this->width()/18, this->width()/10);
+117     \textcolor{comment}{// enemy starts in the middle-top of the screen}
+118     enemyLoc = \textcolor{keyword}{new} QPoint((this->width()/2)-enemySize->width(), 0 + enemySize->height()/3);
+119     enemyCanFire = \textcolor{keyword}{true};
+120 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{level1_8h}{level1.\+h}\item 
+\hyperlink{level1_8cpp}{level1.\+cpp}\end{DoxyCompactItemize}

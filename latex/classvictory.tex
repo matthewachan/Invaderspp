@@ -1,0 +1,68 @@
+\hypertarget{classvictory}{}\section{victory Class Reference}
+\label{classvictory}\index{victory@{victory}}
+
+
+This class handles the UI displaying the victory screen of the game.  
+
+
+
+
+{\ttfamily \#include $<$victory.\+h$>$}
+
+Inheritance diagram for victory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvictory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvictory_a7d68234bd5e40dc9879caca6c2cdd4b3}{victory} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classvictory_a6384ce7d94b46b7d07e8d870f939a863}{$\sim$victory} ()\hypertarget{classvictory_a6384ce7d94b46b7d07e8d870f939a863}{}\label{classvictory_a6384ce7d94b46b7d07e8d870f939a863}
+
+\begin{DoxyCompactList}\small\item\em Delete the victory screen. \end{DoxyCompactList}\item 
+void {\bfseries paint\+Event} (Q\+Paint\+Event $\ast$)\hypertarget{classvictory_a95c8578693a125725cf4d64694436eed}{}\label{classvictory_a95c8578693a125725cf4d64694436eed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the UI displaying the victory screen of the game. 
+
+Definition at line 20 of file victory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{victory@{victory}!victory@{victory}}
+\index{victory@{victory}!victory@{victory}}
+\subsubsection[{\texorpdfstring{victory(\+Q\+Widget $\ast$parent=0)}{victory(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}victory\+::victory (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classvictory_a7d68234bd5e40dc9879caca6c2cdd4b3}{}\label{classvictory_a7d68234bd5e40dc9879caca6c2cdd4b3}
+Create the victory screen 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is the parent Q\+Widget of this object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file victory.\+cpp.
+
+
+\begin{DoxyCode}
+10                                 : QWidget(parent), ui(\textcolor{keyword}{new} Ui::victory)\{
+11     \textcolor{comment}{// init ui form's components}
+12     ui->setupUi(\textcolor{keyword}{this});
+13     connect(ui->pushButton, SIGNAL(clicked(\textcolor{keywordtype}{bool})), parent, SLOT(game\_over()));
+14 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{victory_8h}{victory.\+h}\item 
+\hyperlink{victory_8cpp}{victory.\+cpp}\end{DoxyCompactItemize}
