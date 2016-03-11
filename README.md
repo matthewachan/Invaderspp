@@ -6,3 +6,8 @@ Written in C++ using the Qt Creator 5.5
 
 #Documentation
 DOxygen HTML and LaTeX files are included in the project folder. Each class has been notated using the conventions of the DOxygen commenting style.
+
+#Screenshots
+An example screenshot from the game:
+
+![Alt text](/screenshots/level2.JPG?raw=true "Level")
